@@ -1,9 +1,9 @@
-H.E.L.P.eR
+O_O = H.E.L.P.eR
 ==========
 
-Helper function used regularly in development.
+Helper functions used regularly in development.
 
-<img src="http://imgur.com/u7Q7UgY.jpg"/>
+<img src="http://imgur.com/u7Q7UgY.jpg" width="100px"/>
 
 ## Installation
 
@@ -28,7 +28,7 @@ O_O.isInArray(arr, "dog"); // returns true
 
 (The MIT License)
 
-Copyright (c) 2011 Einar Otto Stangvik &lt;einaros@gmail.com&gt;
+Copyright (c) 2013 Chris Dolphin &lt;dolphin@likethemammal.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
