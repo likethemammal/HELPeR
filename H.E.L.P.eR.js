@@ -6,6 +6,9 @@
 
         isInPrototype: function(object, key) {
             return !object.hasOwnProperty(key);
+        },
+        nodeListToArray: function(nodeList) {
+            return [].slice.call(nodeList);
         }
     };
 })(this);
