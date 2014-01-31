@@ -7,8 +7,16 @@
         isInPrototype: function(object, key) {
             return !object.hasOwnProperty(key);
         },
-        nodeListToArray: function(nodeList) {
+        
+	nodeListToArray: function(nodeList) {
             return [].slice.call(nodeList);
-        }
-    };
+        },
+
+	removeClass: function(el, className) {
+	    el.className = el.className.replace(
+	        new RegExp('(^|\\s+)' + className + '(\\s+|$)', 'g'),
+	            '$1'
+	        );
+	    }
+    	}
 })(this);
