@@ -8,6 +8,10 @@
             return !object.hasOwnProperty(key);
         },
         
+        isBetweenNumbers: function(numGiven, numToCheck, ratio) {
+            return numGiven >= numToCheck - ratio && numGiven <= numToCheck + ratio;
+        },
+        
 	nodeListToArray: function(nodeList) {
             return [].slice.call(nodeList);
         },
@@ -18,5 +22,12 @@
 	            '$1'
 	        );
 	    }
-    	}
+    	},
+    	
+    	hasClass: function(el, selector) {
+	    var className = ' ' + selector + ' ',
+	        elClasses = ' ' + el.className + ' ';
+	
+	    return elClasses.replace(/[\n\t]/g, ' ').indexOf(className) > -1;
+    	},
 })(this);
